@@ -20,12 +20,23 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        // child: Image(
-          // image: NetworkImage('https://images.unsplash.com/photo-1615199905555-1dc4f184621a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1241&q=80'),
-          // image: AssetImage('assets/images/pic-3.jpg'),
-        // ),
-        // child: Image.network('a url from the Internet'),
-        child: Image.asset('assets/images/pic-3.jpg'),
+        child: IconButton(
+          onPressed: () {
+            print('you clicked an icon button');
+          },
+          icon: Icon(Icons.alternate_email),
+          color: Colors.amber,
+        )
+          /*ElevatedButton.icon(
+          onPressed: () {},
+          icon: Icon(
+            Icons.mail
+          ),
+          label: Text('mail me'),
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.amber),
+          ),
+        ),*/
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
@@ -49,4 +60,3 @@ Text(
           ),
         )
  */
-
