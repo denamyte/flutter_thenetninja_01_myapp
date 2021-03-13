@@ -9,54 +9,16 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'my first app',
-          style: TextStyle(
-            fontSize: 25,
-            fontFamily: 'AkayaTelivigala',
-          ),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.red[600],
+          title: Text('my first app'),
+          centerTitle: true,
+          backgroundColor: Colors.red[600]
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {
-            print('you clicked an icon button');
-          },
-          icon: Icon(Icons.alternate_email),
-          color: Colors.amber,
-        )
-          /*ElevatedButton.icon(
-          onPressed: () {},
-          icon: Icon(
-            Icons.mail
-          ),
-          label: Text('mail me'),
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(Colors.amber),
-          ),
-        ),*/
-      ),
+      body: ,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        backgroundColor: Colors.red[600],
         child: Text('click'),
-        backgroundColor: Colors.red,
       ),
     );
   }
 }
 
-/*
-
-Text(
-          'hello ninjas!',
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2,
-            color: Colors.grey[600],
-            fontFamily: 'IndieFlower',
-          ),
-        )
- */
