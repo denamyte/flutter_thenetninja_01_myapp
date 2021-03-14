@@ -14,8 +14,10 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600]
       ),
       body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text('Hello, World!'),
+          Text('Hello, World!', style: TextStyle(backgroundColor: Colors.green),),
           TextButton(
             onPressed: () {},
             style: ButtonStyle(
@@ -31,6 +33,7 @@ class Home extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        onPressed: () {},
         backgroundColor: Colors.red[600],
         child: Text('click'),
       ),
